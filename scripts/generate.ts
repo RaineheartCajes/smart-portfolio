@@ -13,7 +13,7 @@ async function generateEmbeddings() {
 
   const vectorStore = await getVectorStore();
 
-  (await getEmbeddingsCollection()).deleteMany({});
+  (await getEmbeddingsCollection()).deleteAll({});
 
   const loader = new DirectoryLoader(
     "src/app/",
@@ -33,9 +33,10 @@ async function generateEmbeddings() {
           .split("/page.")[0] || "/";
 
       const pageContentTrimmed = doc.pageContent
-        .replace(/^import.*$/gm, "") // Remove all import statements
-        .replace(/ className=(["']).*?\1| className={.*?}/g, "") // Remove all className props
-        .replace(/^\s*[\r]/gm, "") // remove empty lines
+        .replace(/^import.*$/gm, "") // remove imports
+        .replace(/ className=(["']).*?\1| className={.*?}/g, "") // remove className
+        .replace(/<[^>]+>/g, " ") // remove ALL JSX/HTML tags
+        .replace(/\s+/g, " ") // collapse whitespace
         .trim();
 
       return {
