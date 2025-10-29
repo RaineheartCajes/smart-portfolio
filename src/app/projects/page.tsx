@@ -18,7 +18,7 @@ export default function Page() {
         <ul className="list-inside list-disc space-y-2">
           <li>
             <a href="https://angels-pizza.com" className="underline">
-              Angel's Pizza
+              Angel&apos;s Pizza
             </a>{" "}
             – A full-stack, multi-tenant pizza ordering and delivery management ecosystem with web and mobile platforms.
           </li>
