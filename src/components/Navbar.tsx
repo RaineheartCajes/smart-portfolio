@@ -9,6 +9,7 @@ export default function Navbar() {
         <nav className="space-x-4 font-medium">
           <Link href="/">Home</Link>
           <Link href="/about">About Me</Link>
+          <Link href="/projects">Projects</Link>
         </nav>
         <div className="flex items-center gap-4">
           <AIChatButton />
