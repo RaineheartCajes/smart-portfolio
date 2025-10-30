@@ -18,8 +18,7 @@ export default function Home() {
             Hi, I&apos;m Raineheart 👋
           </H1>
           <p className="text-center sm:text-start">
-            I&apos;m a full-stack developer from Philippines who builds cool
-            websites and AI Agents using LangChain and LangGraph.
+            Full-Stack Developer & AI Automation Specialist. I craft powerful web applications and build intelligent automation systems.
           </p>
         </div>
         <div className="flex justify-center">
