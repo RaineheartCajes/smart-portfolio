@@ -15,7 +15,7 @@ export default function Page() {
       <H1>About Me</H1>
       <section className="space-y-3">
         <H2>Who am I?</H2>
-        <p>I'm <strong>Raineheart Cajes</strong>, a Computer Science graduate and developer with two years of full-stack web development experience. I now specialize in <strong>AI Automation</strong>, architecting solutions using <strong>N8N</strong> for workflow orchestration and <strong>LangChain</strong> to build sophisticated, context-aware AI applications.</p> <p>My focus is on creating intelligent, scalable systems that bridge the gap between robust web platforms and powerful, automated AI agents.</p>      </section>
+        <p>I&apos;m <strong>Raineheart Cajes</strong>, a Computer Science graduate and developer with two years of full-stack web development experience. I now specialize in <strong>AI Automation</strong>, architecting solutions using <strong>N8N</strong> for workflow orchestration and <strong>LangChain</strong> to build sophisticated, context-aware AI applications.</p> <p>My focus is on creating intelligent, scalable systems that bridge the gap between robust web platforms and powerful, automated AI agents.</p>      </section>
 
       <hr className="border-muted" />
 
@@ -53,10 +53,11 @@ export default function Page() {
       <section className="space-y-3">
         <H2>Hobbies</H2>
         <p>
-    When I'm not coding, you'll often find me on the basketball court, exploring a new hiking trail, or diving into books on personal development and positive psychology. I believe a healthy mind and body are the ultimate foundations for creativity and focus.
+    When I&apos;m not coding, you&apos;ll often find me on the basketball court, exploring a new hiking trail, or diving into books on personal development and positive psychology. I believe a healthy mind and body are the ultimate foundations for creativity and focus.
 </p>
         <Image src={hobby} alt="Mountain nature photo" className="rounded-md" />
       </section>
     </section>
   );
 }
+
